@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>Lezione HTML</title>
+</head>
+
+<body>
+    <section>
+        <div>
+            <label for="email">
+                <span>E-mail: </span>
+                <strong><abbr title="richiesto">#</abbr></strong>
+            </label>
+            <input type="email" name="email" id="email"><br><br>
+        </div>
+        <div>
+            <label for="psw">
+                <span>password: </span>
+                <strong><abbr title="richiesto">#</abbr></strong>
+            </label>
+            <input type="password" name="psw" id="psw"><br><br>
+        </div>
+        <label for="name">
+            <span>Nome Cognome: </span>
+            <strong><abbr title="richiesto"></abbr></strong>
+        </label>
+        <input type="text" id="name" autofocus required><br><br>
+        <div>
+            <label for="datan">
+                <span>Data</span>
+                <strong><abbr title="richiesto">#</abbr></strong>
+                </label>
+            <input type="datetime-local" id="datan" name="datan"><br><br>
+        </div>
+        <div>
+            <label for="numero">Numero di telefono
+                <input type="tel" name="numero"><br><br>
+            </label>
+        </div>
+        <fieldset>
+            <legend>Abbonamenti</legend>
+            <ul>
+                <li>
+                    <label for="abb">
+                        <input type="radio" id="abb" >
+                        Premium 22.90$
+                    </label>
+                </li>
+                <li>
+                    <label for="abb2">
+                        <input type="radio" id="abb2" >
+                        Medium 15.49$
+                    </label>
+                </li>
+                <li>
+                    <label for="abb3">
+                        <input type="radio" id="abb3" >
+                        Free 0$ for two weeks
+                        <ul>
+                            <li>After the two weeks select Premium or Free</li>
+                        </ul>
+                    </label>
+                </li>
+            </ul>
+        </fieldset><br><br>
+
+        <fieldset>
+            <legend>Pagamento</legend>
+            <ul>
+                <li>
+                    <label for="n1">N.carta
+                        <input type="number" id="n1" >
+                    </label>
+                </li>
+                <li>
+                    <label for="n2">CVC
+                        <input type="number" id="n2" min="3" max="3" >
+                    </label>
+                </li>
+                <li>
+                    <label for="n3">D.scadenza
+                        <input type="datetime-local" id="n3" >
+                    </label>
+                </li>
+            </ul>
+        </fieldset>
+    </section>
+</body>
+<html>
+
+</html>
+
+</html>
