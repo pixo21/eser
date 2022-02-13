@@ -1,0 +1,26 @@
+<style type="text/css">.showbutton {
+    display: block;
+    margin: 4px 0;
+}
+
+.nascondi {
+    overflow: hidden;
+    background: #88ff88;
+}
+
+.nasondi>div {
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: margin 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: margin 0.3s ease;
+}
+
+.showbutton[value="Mostra"]+.nascondi>div {
+    margin-top: -100%;
+}
+
+.showbutton[value="Nascondi"]+.nascondi {
+    padding: 4px;
+}
+
+</style>
