@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <link rel="stylesheet" href="ccss" />
+    <title>Lezione CSS</title>
+</head>
+
+<body>
+    <style>
+        #menucss {
+            height: 200px;
+        }
+        
+        #menucss a {
+            text-decoration: none;
+        }
+        
+        #mnucss nav {
+            font-family: monospace;
+        }
+        
+        #menucss ul {
+            background: darkorange;
+            list-style: none;
+            margin: 0;
+            padding-left: 0;
+        }
+        
+        #menucss li {
+            color: #fff;
+            background: darkorange;
+            display: block;
+            float: left;
+            padding: 1rem;
+            position: relative;
+            text-decoration: none;
+            transition-duration: 0.5s;
+            z-index: 99999;
+        }
+        
+        #menucss li a {
+            color: #fff;
+        }
+        
+        #menucss li:hover {
+            background: red;
+            cursor: pointer;
+        }
+        
+        #menucss ul li ul {
+            background: orange;
+            visibility: hidden;
+            opacity: 0;
+            min-width: 5rem;
+            position: absolute;
+            transition: all 0.5s ease;
+            margin-top: 1rem;
+            left: 0px;
+        }
+        
+        #menucss ul li:hover>ul,
+        ul li:focus-within>ul,
+        ul li ul:hover {
+            visibility: visible;
+            opacity: 1;
+        }
+        
+        #menucss ul li ul li {
+            clear: both;
+            width: 100%;
+        }
+    </style>
+    <div>
+        <img href="#">
+    </div>
+    <div id="menucss">
+        <nav role="navigation">
+            <ul>
+                <li><a href="#">One</a>
+                    <ul class="dropdown">
+                        <li><a href="#">Sub1-1</a></li>
+                        <li><a href="#">Sub1-2</a>
+                        </li>
+                        <li><a href="#">Sub1-3</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Two</a>
+                    <ul class="dropdown">
+                        <li><a href="#">Sub2-1</a></li>
+                        <li><a href="#">Sub2-2</a>
+                        </li>
+                        <li><a href="#">Sub2-3</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Three</a>
+                    <ul class="dropdown">
+                        <li><a href="#">Sub3-1</a></li>
+                        <li><a href="#">Sub3-2</a>
+                        </li>
+                        <li><a href="#">Sub3-3</a>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="#">Four</a></li>
+            </ul>
+        </nav>
+    </div>
+    <input placeholder="Type here...">
+</body>
+
+</html>
